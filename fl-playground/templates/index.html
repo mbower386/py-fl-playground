@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    h1 {
+      margin: auto;
+      width: 60%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .box-container {
+      margin: auto;
+      width: 100%;
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: 300px 300px 300px 300px;
+      padding: 10px;
+    }
+
+    .box-item {
+      padding: 20px;
+      border: 0.5em solid black;
+      background-color: white;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+
+  <div class="box-container">
+    {% for x in range(0,times): %}
+    <div class="box-item" style="background-color: {{box_color}}"></div>
+    {% endfor %}
+  </div>
+
+</body>
+
+</html>
